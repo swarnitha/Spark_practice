@@ -9,6 +9,6 @@ object SparkTest extends App {
     .getOrCreate()
 
   val df = spark.read.format("text").load("src/main/resources/text.txt")
-  df.show()
+  df.show
 
 }
